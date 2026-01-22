@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* AUTH */
+  .auth-card {
+    @apply bg-[#151528] p-8 rounded-2xl shadow-xl;
+  }
+
+  .auth-input {
+    @apply w-full bg-transparent border border-white/20 rounded-lg
+           py-3 pl-11 pr-11 text-white placeholder:text-white/50
+           focus:outline-none focus:border-indigo-500;
+  }
+
+  .auth-icon {
+    @apply absolute top-1/2 -translate-y-1/2 text-white/60;
+  }
+
+  .auth-btn {
+    @apply w-full bg-[#C9A0DC] py-3 rounded-lg text-black font-medium transition;
+  }
+
+  .auth-btn:hover {
+    @apply bg-[#C9A0DC] text-black; /* Alternância: fundo muda para African Violet no hover, com texto escuro para contraste */
+  }
+
+  .social-btn {
+    @apply flex-1 flex items-center justify-center gap-2
+           border border-white/20 py-2 rounded-lg
+           text-white transition;
+  }
+
+  .social-btn:hover {
+    @apply bg-[#C9A0DC] text-black border-[#C9A0DC]; /* Alternância: fundo e borda mudam para African Violet no hover, com texto escuro */
+  }
+
+  /* HEADER LINKS */
+  .nav-link {
+    @apply relative transition-all duration-300;
+  }
+
+  .nav-link::after {
+    content: "";
+    @apply absolute left-0 -bottom-1 w-0 h-px bg-[#C9A0DC] transition-all duration-300; /* Cor do underline alterada para African Violet */
+  }
+
+  .nav-link:hover {
+    color: #C9A0DC; /* Alternância: texto muda para African Violet no hover */
+    filter: drop-shadow(0 0 6px rgba(201, 160, 220, 0.45)); /* Ajustado para usar rgba de #C9A0DC */
+  }
+
+  .nav-link:hover::after {
+    width: 100%;
+  }
+
+  /* FOOTER LINKS */
+  .footer-link {
+    @apply transition-colors duration-300;
+  }
+
+  .footer-link:hover {
+    color: #C9A0DC; /* Alternância: texto muda para African Violet no hover */
+    filter: drop-shadow(0 0 4px rgba(201, 160, 220, 0.4)); /* Ajustado para usar rgba de #C9A0DC */
+  }
+
+  .footer-icon {
+    @apply p-2 rounded-full border border-white/20
+           text-white/70 transition-all duration-300;
+  }
+
+  .footer-icon:hover {
+    color: #C9A0DC; /* Alternância: ícone muda para African Violet no hover */
+    border-color: #C9A0DC;
+    filter: drop-shadow(0 0 6px rgba(201, 160, 220, 0.5)); /* Ajustado para usar rgba de #C9A0DC */
+  }
+}

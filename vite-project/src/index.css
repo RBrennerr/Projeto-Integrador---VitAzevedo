@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: "AliceWonderland";
+  src: url("/src/assets/fonts/AliceWonderland.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "InterTightBold";
+  src: url("/src/assets/fonts/InterTight-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
