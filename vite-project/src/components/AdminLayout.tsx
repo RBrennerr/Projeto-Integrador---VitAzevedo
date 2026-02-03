@@ -1,6 +1,6 @@
 import { Link, Outlet } from "react-router-dom";
 import { motion } from "framer-motion";
-import decor1 from "../assets/fotos/BG.png";
+import decor1 from "../assets/Fotos/BG.png";
 
 export function AdminLayout() {
   return (
